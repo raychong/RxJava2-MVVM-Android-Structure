@@ -1,5 +1,6 @@
 package com.manuelvicnt.rxjava2_mvvm_android_structure.login;
 
+import android.annotation.SuppressLint;
 import android.support.annotation.NonNull;
 
 import com.manuelvicnt.rxjava2_mvvm_android_structure.base.Lifecycle;
@@ -98,12 +99,14 @@ public class LoginViewModel extends NetworkViewModel implements LoginContract.Vi
 
     private class LoginObserver extends MaybeNetworkObserver<Object> {
 
+        @SuppressLint("MissingSuperCall")
         @Override
         public void onSuccess(Object value) {
 
             onLoginCompleted();
         }
 
+        @SuppressLint("MissingSuperCall")
         @Override
         public void onError(Throwable e) {
 

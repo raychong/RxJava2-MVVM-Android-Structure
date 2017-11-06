@@ -20,7 +20,7 @@ import retrofit2.Retrofit;
 /**
  * Created by ManuelVivo on 03/10/15.
  */
-public class UserDataRequestManager {
+public class  UserDataRequestManager {
 
     private static UserDataRequestManager instance;
 
